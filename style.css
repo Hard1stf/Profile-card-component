@@ -1,0 +1,82 @@
+:root {
+    /* primary colors */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* neutral colors */
+    --Dark-gray: hsl(0, 0%, 59%);
+    /* Main-font */
+    --Kumbh-Sans: "Kumbh Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Kumbh-Sans);
+    
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 600px, 600px;
+    background-position: -400px -200px, 150px 450px;
+    /* (top left) and (bottom right) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card{
+    background-color: white;
+    width: 90%;
+    min-height: fit-content;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.profile-bg{
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-card.svg);
+    min-width: 100%;
+    height: 140px;
+}
+
+.profile-picture{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -48px;
+    right: auto;
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture img{
+    /* width: max-content;    */
+    border-radius: 50%;
+}
+
+
+.social-number{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px 20px
+}
