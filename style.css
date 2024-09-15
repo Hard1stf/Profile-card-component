@@ -36,7 +36,7 @@ main{
 
 .main-card{
     background-color: white;
-    width: 90%;
+    width: 375px;
     min-height: fit-content;
     margin-inline: 25px;
     display: flex;
