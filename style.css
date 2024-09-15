@@ -38,13 +38,14 @@ main{
     background-color: white;
     width: 90%;
     min-height: fit-content;
-    /* padding: 20px; */
+    margin-inline: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0px 0px 148px -11px hsl(229deg 52.96% 2.67% / 66%);
 }
 
 .profile-bg{
@@ -56,10 +57,10 @@ main{
 
 .profile-picture{
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     position: relative;
-    top: -48px;
+    top: -55px;
     right: auto;
     border-radius: 50%;
     padding: 5px;
@@ -73,10 +74,54 @@ main{
     border-radius: 50%;
 }
 
+h2{
+    font-size: 18px;
+    margin-top: -35px;
+    padding-bottom: 10px;
+}
+
+h2 span{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    padding-left: 3px;
+}
+
+.city{
+    color: var(--Dark-grayish-blue);
+    font-size: 16px;
+}
+
+hr{
+    width: inherit;
+    height: 1px;
+    background-color:hsla(227, 10%, 46%, 0.288);
+    border: none;
+    margin-block: 30px;
+}
 
 .social-number{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 30px 0px 20px
+    padding: 0px 0px 30px
+}
+
+.followers, .likes, .photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.number{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.feature{
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: var(--Dark-grayish-blue);
 }
