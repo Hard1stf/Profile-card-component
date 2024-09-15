@@ -45,7 +45,7 @@ main{
     align-items: center;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 148px -11px hsl(229deg 52.96% 2.67% / 66%);
+    box-shadow: rgb(3 5 10 / 44%) 0px 0px 140px -30px;
 }
 
 .profile-bg{
@@ -124,4 +124,26 @@ hr{
     letter-spacing: 3px;
     font-size: 12px;
     color: var(--Dark-grayish-blue);
+}
+
+/* Desktop screen style : 1024 and 1440 */
+
+@media (min-width: 1440px) {
+    main{
+        background-size: 1000px, 1271px;
+        background-position: -35px -452px, 983px 383px  ;
+    }
+    
+    .main-card{
+        max-width: 400px;
+        max-height: max-content;
+        margin-inline: auto;
+    }
+
+    .profile-bg{
+        /* background-color: var(--Dark-cyan); */
+        /* background-image: url(./images/bg-pattern-card.svg); */
+        max-width: 100%;
+        height: 170px;
+    }
 }
