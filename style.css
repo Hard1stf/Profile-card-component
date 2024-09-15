@@ -138,6 +138,14 @@ hr{
         max-width: 400px;
         max-height: max-content;
         margin-inline: auto;
+        box-shadow: none;
+        transform: scale(1);
+        transition: box-shadow,transform 0.7s,0.2s ease-in-out;
+    }
+    
+    .main-card:hover{
+        transform: scale(1.1);
+        box-shadow: rgb(3 5 10 / 44%) 0px 0px 100px -30px;
     }
 
     .profile-bg{
